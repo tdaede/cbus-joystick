@@ -1,0 +1,11 @@
+(fp_lib_table
+  (lib (name Wire_Pads)(type Github)(uri "$(KIGITHUB)/Wire_Pads.pretty")(options "")(descr ""))
+  (lib (name cbus)(type KiCad)(uri "$(KIPRJMOD)/cbus.pretty")(options "")(descr ""))
+  (lib (name Connectors)(type Github)(uri "$(KIGITHUB)/Connectors.pretty")(options "")(descr ""))
+  (lib (name Connectors_Card)(type Github)(uri "$(KIGITHUB)/Connectors_Card.pretty")(options "")(descr ""))
+  (lib (name Socket_Strips)(type Github)(uri "$(KIGITHUB)/Socket_Strips.pretty")(options "")(descr ""))
+  (lib (name Sockets)(type Github)(uri "$(KIGITHUB)/Sockets.pretty")(options "")(descr ""))
+  (lib (name tinyfpga)(type KiCad)(uri "$(KIPRJMOD)/tinyfpga.pretty")(options "")(descr ""))
+  (lib (name ICE40HX1K-VQ100)(type Legacy)(uri "$(KIPRJMOD)/ICE40HX1K-VQ100.mod")(options "")(descr ""))
+  (lib (name SN74LVC8T245DWR)(type Legacy)(uri "$(KIPRJMOD)/SN74LVC8T245DWR.mod")(options "")(descr ""))
+)
