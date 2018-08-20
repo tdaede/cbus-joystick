@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/thomas/sandbox/cbus/cbus.sch)
-    (date "Sat 18 Aug 2018 10:34:54 PM PDT")
+    (date "Sun 19 Aug 2018 11:01:27 PM PDT")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -23,7 +23,7 @@
       (tstamp 5B6A7DFF))
     (comp (ref U1)
       (value SN74LVC8T245DWR)
-      (footprint SN74LVC8T245DWR:SOIC127P1030X265-24N)
+      (footprint cbus:SOIC127P1030X265-24N)
       (datasheet "SOIC-24 Texas Instruments")
       (fields
         (field (name Field4) "Texas Instruments")
@@ -36,7 +36,7 @@
       (tstamp 5B6A81CC))
     (comp (ref U2)
       (value SN74LVC8T245DWR)
-      (footprint SN74LVC8T245DWR:SOIC127P1030X265-24N)
+      (footprint cbus:SOIC127P1030X265-24N)
       (datasheet "SOIC-24 Texas Instruments")
       (fields
         (field (name Field4) "Texas Instruments")
@@ -49,7 +49,7 @@
       (tstamp 5B6A90E7))
     (comp (ref U4)
       (value SN74LVC8T245DWR)
-      (footprint SN74LVC8T245DWR:SOIC127P1030X265-24N)
+      (footprint cbus:SOIC127P1030X265-24N)
       (datasheet "SOIC-24 Texas Instruments")
       (fields
         (field (name Field4) "Texas Instruments")
@@ -62,7 +62,7 @@
       (tstamp 5B6A9173))
     (comp (ref U3)
       (value SN74LVC8T245DWR)
-      (footprint SN74LVC8T245DWR:SOIC127P1030X265-24N)
+      (footprint cbus:SOIC127P1030X265-24N)
       (datasheet "SOIC-24 Texas Instruments")
       (fields
         (field (name Field4) "Texas Instruments")
@@ -611,22 +611,22 @@
         (pin (num 4) (name NC) (type NotConnected))
         (pin (num 5) (name OUT) (type power_out)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical regul)
       (uri /usr/share/kicad/library/regul.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
     (library (logical atmel)
       (uri /usr/share/kicad/library/atmel.lib))
     (library (logical cbus_io)
-      (uri cbus_io.lib))
+      (uri /home/thomas/sandbox/cbus/cbus_io.lib))
     (library (logical tinyfpga)
-      (uri tinyfpga.lib))
+      (uri /home/thomas/sandbox/cbus/tinyfpga.lib))
     (library (logical SN74LVC8T245DWR)
-      (uri SN74LVC8T245DWR.lib))
+      (uri /home/thomas/sandbox/cbus/SN74LVC8T245DWR.lib))
     (library (logical ICE40HX1K-VQ100)
-      (uri ICE40HX1K-VQ100.lib)))
+      (uri /home/thomas/sandbox/cbus/ICE40HX1K-VQ100.lib)))
   (nets
     (net (code 1) (name GND)
       (node (ref U7) (pin 2))

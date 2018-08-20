@@ -1,4 +1,4 @@
-update=Thu 09 Aug 2018 01:10:58 AM PDT
+update=Sun 19 Aug 2018 05:51:39 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,3 +66,13 @@ LibName34=Lattice
 LibName35=SN74LVC8T245DWR
 LibName36=tinyfpga
 LibName37=ICE40HX1K-VQ100
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
