@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 6.0.0-rc1-unknown-r13685-202b35bc)
+(kicad_pcb (version 20171130) (host pcbnew 6.0.0-rc1-unknown-r13701-d3c82b0b)
 
   (general
     (thickness 1.6)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.2)
     (user_trace_width 0.5)
     (trace_clearance 0.16)
     (zone_clearance 0.2)
@@ -63,7 +63,7 @@
     (grid_origin 39 166)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x010fc_80000001)
+      (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -637,7 +637,7 @@
     (fp_line (start -3.81 -7.7978) (end -3.81 7.7978) (layer Dwgs.User) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.604 -6.985) (angle -180) (layer Dwgs.User) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.1976 -6.985) (angle -180) (layer Dwgs.User) (width 0.1524))
-    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer Dwgs.User) (width 0))
+    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer Dwgs.User) (width 0.1))
     (fp_line (start 3.81 -7.5946) (end 3.81 -7.7978) (layer F.SilkS) (width 0.1524))
     (fp_line (start -3.81 7.5946) (end -3.81 7.7978) (layer F.SilkS) (width 0.1524))
     (fp_line (start -3.81 7.7978) (end 3.81 7.7978) (layer F.SilkS) (width 0.1524))
@@ -648,7 +648,7 @@
     (fp_line (start -3.81 -7.7978) (end -3.81 -7.5946) (layer F.SilkS) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.604 -6.985) (angle -180) (layer F.SilkS) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.1976 -6.985) (angle -180) (layer F.SilkS) (width 0.1524))
-    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer F.SilkS) (width 0))
+    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer F.SilkS) (width 0.1))
     (pad 1 smd rect (at -4.6736 -6.985 180) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
       (net 90 +3V3))
     (pad 2 smd rect (at -4.6736 -5.715 180) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
@@ -697,6 +697,11 @@
       (net 11 +5V))
     (pad 24 smd rect (at 4.6736 -6.985) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
       (net 11 +5V))
+    (model ${KISYS3DMOD}/Package_SO.3dshapes/SOIC-24W_7.5x15.4mm_P1.27mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module cbus:SOIC127P1030X265-24N (layer F.Cu) (tedit 5B7A59AB) (tstamp 5B754F08)
@@ -813,7 +818,7 @@
     (fp_line (start -3.81 -7.7978) (end -3.81 7.7978) (layer Dwgs.User) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.604 -6.985) (angle -180) (layer Dwgs.User) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.1976 -6.985) (angle -180) (layer Dwgs.User) (width 0.1524))
-    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer Dwgs.User) (width 0))
+    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer Dwgs.User) (width 0.1))
     (fp_line (start 3.81 -7.5946) (end 3.81 -7.7978) (layer F.SilkS) (width 0.1524))
     (fp_line (start -3.81 7.5946) (end -3.81 7.7978) (layer F.SilkS) (width 0.1524))
     (fp_line (start -3.81 7.7978) (end 3.81 7.7978) (layer F.SilkS) (width 0.1524))
@@ -824,7 +829,7 @@
     (fp_line (start -3.81 -7.7978) (end -3.81 -7.5946) (layer F.SilkS) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.604 -6.985) (angle -180) (layer F.SilkS) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.1976 -6.985) (angle -180) (layer F.SilkS) (width 0.1524))
-    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer F.SilkS) (width 0))
+    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer F.SilkS) (width 0.1))
     (pad 1 smd rect (at -4.6736 -6.985 180) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
       (net 90 +3V3))
     (pad 2 smd rect (at -4.6736 -5.715 180) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
@@ -873,6 +878,11 @@
       (net 11 +5V))
     (pad 24 smd rect (at 4.6736 -6.985) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
       (net 11 +5V))
+    (model ${KISYS3DMOD}/Package_SO.3dshapes/SOIC-24W_7.5x15.4mm_P1.27mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module cbus:SOIC127P1030X265-24N (layer F.Cu) (tedit 5B7A59BB) (tstamp 5B755028)
@@ -989,7 +999,7 @@
     (fp_line (start -3.81 -7.7978) (end -3.81 7.7978) (layer Dwgs.User) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.604 -6.985) (angle -180) (layer Dwgs.User) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.1976 -6.985) (angle -180) (layer Dwgs.User) (width 0.1524))
-    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer Dwgs.User) (width 0))
+    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer Dwgs.User) (width 0.1))
     (fp_line (start 3.81 -7.5946) (end 3.81 -7.7978) (layer F.SilkS) (width 0.1524))
     (fp_line (start -3.81 7.5946) (end -3.81 7.7978) (layer F.SilkS) (width 0.1524))
     (fp_line (start -3.81 7.7978) (end 3.81 7.7978) (layer F.SilkS) (width 0.1524))
@@ -1000,7 +1010,7 @@
     (fp_line (start -3.81 -7.7978) (end -3.81 -7.5946) (layer F.SilkS) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.604 -6.985) (angle -180) (layer F.SilkS) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.1976 -6.985) (angle -180) (layer F.SilkS) (width 0.1524))
-    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer F.SilkS) (width 0))
+    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer F.SilkS) (width 0.1))
     (pad 1 smd rect (at -4.6736 -6.985 180) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
       (net 90 +3V3))
     (pad 2 smd rect (at -4.6736 -5.715 180) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
@@ -1049,6 +1059,11 @@
       (net 11 +5V))
     (pad 24 smd rect (at 4.6736 -6.985) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
       (net 11 +5V))
+    (model ${KISYS3DMOD}/Package_SO.3dshapes/SOIC-24W_7.5x15.4mm_P1.27mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module cbus:SOIC127P1030X265-24N (layer F.Cu) (tedit 5B7A59B0) (tstamp 5B756CA9)
@@ -1165,7 +1180,7 @@
     (fp_line (start -3.81 -7.7978) (end -3.81 7.7978) (layer Dwgs.User) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.604 -6.985) (angle -180) (layer Dwgs.User) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.1976 -6.985) (angle -180) (layer Dwgs.User) (width 0.1524))
-    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer Dwgs.User) (width 0))
+    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer Dwgs.User) (width 0.1))
     (fp_line (start 3.81 -7.5946) (end 3.81 -7.7978) (layer F.SilkS) (width 0.1524))
     (fp_line (start -3.81 7.5946) (end -3.81 7.7978) (layer F.SilkS) (width 0.1524))
     (fp_line (start -3.81 7.7978) (end 3.81 7.7978) (layer F.SilkS) (width 0.1524))
@@ -1176,7 +1191,7 @@
     (fp_line (start -3.81 -7.7978) (end -3.81 -7.5946) (layer F.SilkS) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.604 -6.985) (angle -180) (layer F.SilkS) (width 0.1524))
     (fp_arc (start -6.4008 -6.985) (end -6.1976 -6.985) (angle -180) (layer F.SilkS) (width 0.1524))
-    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer F.SilkS) (width 0))
+    (fp_arc (start 0 -7.7978) (end -0.3048 -7.7978) (angle -180) (layer F.SilkS) (width 0.1))
     (pad 1 smd rect (at -4.6736 -6.985 180) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
       (net 90 +3V3))
     (pad 2 smd rect (at -4.6736 -5.715 180) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
@@ -1225,6 +1240,11 @@
       (net 11 +5V))
     (pad 24 smd rect (at 4.6736 -6.985) (size 1.9812 0.5588) (layers F.Cu F.Paste F.Mask)
       (net 11 +5V))
+    (model ${KISYS3DMOD}/Package_SO.3dshapes/SOIC-24W_7.5x15.4mm_P1.27mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module cbus:alice2 (layer F.Cu) (tedit 5B7A53A3) (tstamp 5B7A6CA3)
@@ -5291,6 +5311,11 @@
       (net 93 D1))
     (pad 100 smd rect (at -6 -7.67 270) (size 1.47 0.28) (layers F.Cu F.Paste F.Mask)
       (net 92 D0))
+    (model ${KISYS3DMOD}/Package_QFP.3dshapes/LQFP-100_14x14mm_P0.5mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm (layer F.Cu) (tedit 58CD0CDA) (tstamp 5B74C9E1)
@@ -5341,6 +5366,11 @@
     (pad 8 smd rect (at 2.7 -1.905 270) (size 1.55 0.6) (layers F.Cu F.Paste F.Mask)
       (net 90 +3V3))
     (model ${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -7001,7 +7031,7 @@
   (segment (start 49.8 53.2) (end 49.8 52.914) (width 0.5) (layer F.Cu) (net 127) (status 30))
   (segment (start 49.8 52.914) (end 51.514 51.2) (width 0.5) (layer F.Cu) (net 127) (status 30))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5B8F3C06) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5B91F5C9) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7584,7 +7614,7 @@
       )
     )
   )
-  (zone (net 90) (net_name +3V3) (layer F.Cu) (tstamp 5B8F3C03) (hatch edge 0.508)
+  (zone (net 90) (net_name +3V3) (layer F.Cu) (tstamp 5B91F5C6) (hatch edge 0.508)
     (connect_pads (clearance 0.2))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
