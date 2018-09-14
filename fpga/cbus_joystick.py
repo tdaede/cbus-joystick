@@ -9,10 +9,17 @@ class CbusJoystick(Module):
         self.iow = Signal()
         self.p1 = Signal()
         self.p1.s = Signal()
+        self.p2 = Signal()
+        self.p2.s = Signal()
+        self.counter = Signal(23)
+        self.comb += [
+            self.p1.s.eq(~self.counter[22])
+        ]
         self.sync += [
+            self.counter.eq(self.counter + 1),
             If(self.iow == 0,
                If(self.addr == 0xD0,
-                  self.p1.s.eq(~self.p1.s)
+                  self.p2.s.eq(~self.p1.s)
                )
             )
         ]
