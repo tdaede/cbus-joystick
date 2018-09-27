@@ -30,7 +30,8 @@ class CbusJoystick(Module):
         self.joy_enabled = Signal()
         self.comb += [
             self.data.oe.eq(self.dir),
-            self.p1.s.eq(0)
+            self.p1.s.eq(1),
+            self.p1_pad.s.eq(1)
         ]
         self.sync += [
             self.dir.eq(0),
