@@ -32,9 +32,7 @@ class CbusJoystick(Module):
         self.comb += [
             self.data.oe.eq(self.dir),
             self.p1.s.eq(1),
-            self.p1_pad.s.eq(1),
             self.p2.s.eq(1),
-            self.p2_pad.s.eq(1)
         ]
         self.sync += [
             self.dir.eq(0),
@@ -79,7 +77,9 @@ class CbusJoystick(Module):
         self.specials += Instance("SB_IO",  p_PULLUP=1, p_PIN_TYPE=Constant(1,6), o_D_IN_0=self.p2.r, o_PACKAGE_PIN=self.p2_pad.r)
         self.specials += Instance("SB_IO",  p_PULLUP=1, p_PIN_TYPE=Constant(1,6), o_D_IN_0=self.p2.b, o_PACKAGE_PIN=self.p2_pad.b)
         self.specials += Instance("SB_IO",  p_PULLUP=1, p_PIN_TYPE=Constant(1,6), o_D_IN_0=self.p2.c, o_PACKAGE_PIN=self.p2_pad.c)
-        
+        self.specials += Instance("SB_IO",  p_PULLUP=1, p_PIN_TYPE=Constant(1,6), o_PACKAGE_PIN=self.p1_pad.s)
+        self.specials += Instance("SB_IO",  p_PULLUP=1, p_PIN_TYPE=Constant(1,6), o_PACKAGE_PIN=self.p2_pad.s)
+
 if __name__ == "__main__":
     plat = cbus_platform.Platform()
     m = CbusJoystick()
