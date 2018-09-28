@@ -24,7 +24,6 @@ class CbusJoystick(Module):
         self.p1_pad = Record(J)
         self.p2 = Record(J)
         self.p2_pad = Record(J)
-        self.counter = Signal(23)
         self.oe = Signal(reset=0)
         self.dir = Signal(reset=0)
         self.joy_enabled = Signal()
@@ -39,7 +38,6 @@ class CbusJoystick(Module):
         ]
         self.sync += [
             self.dir.eq(0),
-            self.counter.eq(self.counter + 1),
             If(self.iow == 0,
                If(self.addr == 0x188,
                   self.joy_enabled.eq(0),
