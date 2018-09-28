@@ -24,6 +24,15 @@ _io = [
      Subsignal("b", Pins("78"), IOStandard("LVCMOS33")),
      Subsignal("c", Pins("69"), IOStandard("LVCMOS33"))
     ),
+    ("p2", 0,
+     Subsignal("u", Pins("68"), IOStandard("LVCMOS33")),
+     Subsignal("d", Pins("65"), IOStandard("LVCMOS33")),
+     Subsignal("l", Pins("63"), IOStandard("LVCMOS33")),
+     Subsignal("r", Pins("62"), IOStandard("LVCMOS33")),
+     Subsignal("s", Pins("64"), IOStandard("LVCMOS33")),
+     Subsignal("b", Pins("66"), IOStandard("LVCMOS33")),
+     Subsignal("c", Pins("60"), IOStandard("LVCMOS33"))
+    ),
 ]
 
 _connectors = [
